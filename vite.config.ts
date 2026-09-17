@@ -19,22 +19,32 @@ function photoUploadPlugin(): Plugin {
               const base64Data = (parsed.data || '').replace(/^data:image\/\w+;base64,/, '');
               const buffer = Buffer.from(base64Data, 'base64');
               const targetDir = path.resolve(process.cwd(), 'public/images');
-              if (!fs.existsSync(targetDir)) {
-                fs.mkdirSync(targetDir, { recursive: true });
+              const rootImagesDir = path.resolve(process.cwd(), 'images');
+              const distImagesDir = path.resolve(process.cwd(), 'dist/images');
+              for (const d of [targetDir, rootImagesDir]) {
+                if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true });
               }
-              const filename = parsed.filename || (parsed.target === 'about' ? '3.jpeg' : '1.jpeg');
-              fs.writeFileSync(path.join(targetDir, filename), buffer);
+              const filename = parsed.filename || (parsed.target === 'about' ? '3.jpeg' : '5.jpeg');
+              const writeToDirs = (name: string, data: Buffer) => {
+                fs.writeFileSync(path.join(targetDir, name), data);
+                fs.writeFileSync(path.join(rootImagesDir, name), data);
+                if (fs.existsSync(distImagesDir)) {
+                  fs.writeFileSync(path.join(distImagesDir, name), data);
+                }
+              };
+              writeToDirs(filename, buffer);
               if (parsed.target === 'about' || filename.includes('3') || filename.includes('about')) {
-                fs.writeFileSync(path.join(targetDir, '3.jpeg'), buffer);
-                fs.writeFileSync(path.join(targetDir, 'about-portrait.jpg'), buffer);
+                writeToDirs('3.jpeg', buffer);
+                writeToDirs('about-portrait.jpg', buffer);
               } else {
-                fs.writeFileSync(path.join(targetDir, '1.jpeg'), buffer);
-                fs.writeFileSync(path.join(targetDir, 'hero-portrait.jpg'), buffer);
-                fs.writeFileSync(path.join(targetDir, 'vihanga-1.jpg'), buffer);
+                writeToDirs('5.jpeg', buffer);
+                writeToDirs('1.jpeg', buffer);
+                writeToDirs('hero-portrait.jpg', buffer);
+                writeToDirs('vihanga-1.jpg', buffer);
               }
               res.statusCode = 200;
               res.setHeader('Content-Type', 'application/json');
-              res.end(JSON.stringify({ success: true, url: `/images/${filename}` }));
+              res.end(JSON.stringify({ success: true, url: `./images/${filename}` }));
             } catch (err) {
               res.statusCode = 500;
               res.setHeader('Content-Type', 'application/json');
