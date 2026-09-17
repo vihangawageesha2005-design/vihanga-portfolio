@@ -24,25 +24,29 @@ export const PORTFOLIO_DATA = {
     quote: "Turning imagination into digital reality."
   },
 
-  // Image Paths (Locked to your uploaded photos)
+  // Image Paths (Locked to your uploaded photos, relative for GitHub Pages)
   images: {
     // 1. Hero Photo (Locked to your original 1.jpeg photo)
-    hero: "/images/1.jpeg",
+    hero: "./images/1.jpeg",
     heroFallbacks: [
-      "/images/1.jpeg",
-      "/images/hero-portrait.jpg"
+      "./images/1.jpeg",
+      "images/1.jpeg",
+      "./images/hero-portrait.jpg",
+      "./public/images/1.jpeg"
     ],
     
     // 2. About Photo (Locked to 3.jpeg - 2+ Years Experience photo)
-    about: "/images/3.jpeg",
+    about: "./images/3.jpeg",
     aboutFallbacks: [
-      "/images/3.jpeg",
-      "/images/about-portrait.jpg",
-      "/images/about-vihanga.svg"
+      "./images/3.jpeg",
+      "images/3.jpeg",
+      "./images/about-portrait.jpg",
+      "./public/images/3.jpeg",
+      "./images/about-vihanga.svg"
     ],
     
     // 3. Contact Banner Background (Silhouette on cliff / cinematic night view)
-    contactBanner: "/images/contact-banner.svg"
+    contactBanner: "./images/contact-banner.svg"
   },
 
   // Official Contact & Social Media Links
@@ -117,7 +121,7 @@ export const PORTFOLIO_DATA = {
       categorySlug: "web-dev",
       description: "Modern responsive portfolio website built with HTML, CSS, JavaScript and AI-assisted development.",
       fullDescription: "A custom personal branding platform engineered with high performance vanilla JavaScript, CSS custom properties, and glassmorphic micro-interactions. Features dynamic theme toggling, interactive case study previews, and smooth layout responsiveness across all screen breakpoints.",
-      image: "/images/project-portfolio.svg",
+      image: "./images/project-portfolio.svg",
       tags: ["HTML5", "CSS3", "JavaScript", "Vite", "Responsive"],
       linkText: "View Project"
     },
@@ -128,7 +132,7 @@ export const PORTFOLIO_DATA = {
       categorySlug: "ui-ux",
       description: "Clean and modern mobile app interface design for better user experience.",
       fullDescription: "A fintech and lifestyle companion application interface focusing on high-contrast neon data visualizations, intuitive swipe navigation, and biometric checkout flows. Designed using modern design tokens and human-centered design principles.",
-      image: "/images/project-mobile-app.svg",
+      image: "./images/project-mobile-app.svg",
       tags: ["Figma", "Design Systems", "Prototyping", "iOS / Android"],
       linkText: "View Project"
     },
@@ -139,7 +143,7 @@ export const PORTFOLIO_DATA = {
       categorySlug: "video",
       description: "Cinematic visual storytelling using modern editing, color grading and motion graphics.",
       fullDescription: "Short film and commercial showreel featuring custom cyberpunk LUT color grading, multi-track atmospheric sound design, speed ramping, and seamless motion graphics transitions engineered for digital platforms.",
-      image: "/images/project-video.svg",
+      image: "./images/project-video.svg",
       tags: ["Premiere Pro", "After Effects", "DaVinci Resolve", "Sound Design"],
       linkText: "View Project"
     },
@@ -150,7 +154,7 @@ export const PORTFOLIO_DATA = {
       categorySlug: "design",
       description: "Logo, social media posts and branding design for a modern brand.",
       fullDescription: "Comprehensive brand identity system encompassing custom typographic monograms, responsive brand guidelines, 3D asset renders, and social media campaign collateral styled with futuristic neon green accents.",
-      image: "/images/project-brand.svg",
+      image: "./images/project-brand.svg",
       tags: ["Illustrator", "Photoshop", "Typography", "Brand Strategy"],
       linkText: "View Project"
     },
@@ -161,7 +165,7 @@ export const PORTFOLIO_DATA = {
       categorySlug: "ai",
       description: "Creative digital content developed using modern AI tools and workflows.",
       fullDescription: "Exploration of generative AI pipelines integrating modern LLMs, Midjourney image generation, agentic coding workflows, and automated asset preparation for modern digital experiences.",
-      image: "/images/project-ai.svg",
+      image: "./images/project-ai.svg",
       tags: ["Generative AI", "Prompt Crafting", "Workflow Automation"],
       linkText: "View Project"
     },
@@ -172,7 +176,7 @@ export const PORTFOLIO_DATA = {
       categorySlug: "photo",
       description: "Collection of landscape, portrait and cinematic street photography.",
       fullDescription: "A photographic series exploring natural light, raw emotion, and high-contrast night aesthetics across Sri Lanka and urban environments. Shot on professional mirrorless gear and graded in Lightroom.",
-      image: "/images/project-photo.svg",
+      image: "./images/project-photo.svg",
       tags: ["Portrait", "Landscape", "Color Grading", "Lightroom"],
       linkText: "View Project"
     }

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="neonCity" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050510"/>
+      <stop offset="50%" stop-color="#0b172a"/>
+      <stop offset="100%" stop-color="#09281a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#neonCity)"/>
+  
+  <!-- Cyberpunk City Skyline -->
+  <polygon points="40,500 40,250 110,250 110,500" fill="#0b0f19"/>
+  <polygon points="120,500 120,180 200,180 200,500" fill="#0d1424"/>
+  <polygon points="210,500 210,280 280,280 280,500" fill="#0b0f19"/>
+  <polygon points="520,500 520,200 600,200 600,500" fill="#0d1424"/>
+  <polygon points="610,500 610,160 700,160 700,500" fill="#08101a"/>
+  <polygon points="710,500 710,290 770,290 770,500" fill="#0b0f19"/>
+
+  <!-- Neon Window Dots -->
+  <g fill="#2ee56b" opacity="0.6">
+    <rect x="135" y="200" width="8" height="12"/>
+    <rect x="155" y="230" width="8" height="12"/>
+    <rect x="175" y="270" width="8" height="12"/>
+    <rect x="630" y="190" width="8" height="12"/>
+    <rect x="660" y="240" width="8" height="12"/>
+  </g>
+  <g fill="#38bdf8" opacity="0.6">
+    <rect x="155" y="200" width="8" height="12"/>
+    <rect x="175" y="240" width="8" height="12"/>
+    <rect x="630" y="220" width="8" height="12"/>
+    <rect x="650" y="290" width="8" height="12"/>
+  </g>
+
+  <!-- Wet Street Reflections -->
+  <ellipse cx="400" cy="460" rx="280" ry="25" fill="#2ee56b" opacity="0.15"/>
+  <ellipse cx="200" cy="470" rx="150" ry="15" fill="#38bdf8" opacity="0.1"/>
+
+  <!-- Cinematic Hooded Figure in Center -->
+  <path d="M 370 500 C 375 420, 360 360, 385 300 C 390 285, 410 285, 415 300 C 440 360, 425 420, 430 500 Z" fill="#05080c"/>
+  <circle cx="400" cy="275" r="22" fill="#020406"/>
+  <!-- Neon green rim light on silhouette -->
+  <path d="M 370 500 C 375 420, 360 360, 385 300" stroke="#2ee56b" stroke-width="2.5" fill="none"/>
+  <path d="M 430 500 C 425 420, 440 360, 415 300" stroke="#38bdf8" stroke-width="2.5" fill="none"/>
+
+  <!-- Cinematic Letterbox bars -->
+  <rect width="800" height="50" fill="#000000"/>
+  <rect y="450" width="800" height="50" fill="#000000"/>
+
+  <!-- Play Reel Button overlay -->
+  <circle cx="400" cy="250" r="45" fill="rgba(7,9,10,0.7)" stroke="#2ee56b" stroke-width="2"/>
+  <polygon points="392,235 418,250 392,265" fill="#2ee56b"/>
+  <text x="360" y="325" font-family="sans-serif" font-size="12" letter-spacing="2" fill="#e5e7eb">4K CINEMATIC</text>
+</svg>
