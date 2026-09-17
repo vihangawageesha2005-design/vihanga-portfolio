@@ -26,13 +26,14 @@ export const PORTFOLIO_DATA = {
 
   // Image Paths (Locked to your uploaded photos, relative for GitHub Pages)
   images: {
-    // 1. Hero Photo (Locked to your original 1.jpeg photo)
-    hero: "./images/1.jpeg",
+    // 1. Hero Photo (Locked to your original 5.jpeg portrait)
+    hero: "./images/5.jpeg",
     heroFallbacks: [
-      "./images/1.jpeg",
-      "images/1.jpeg",
+      "./images/5.jpeg",
+      "images/5.jpeg",
       "./images/hero-portrait.jpg",
-      "./public/images/1.jpeg"
+      "./images/1.jpeg",
+      "./public/images/5.jpeg"
     ],
     
     // 2. About Photo (Locked to 3.jpeg - 2+ Years Experience photo)
