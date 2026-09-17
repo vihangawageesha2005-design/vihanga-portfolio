@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="photoSunset" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="35%" stop-color="#3b1d3d"/>
+      <stop offset="65%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#photoSunset)"/>
+  
+  <!-- Glowing golden sun -->
+  <circle cx="400" cy="320" r="80" fill="#fef08a" opacity="0.9"/>
+  <!-- Mountain silhouettes -->
+  <polygon points="0,320 180,240 320,300 480,210 650,310 800,250 800,500 0,500" fill="#1e1322"/>
+  <polygon points="0,380 150,330 350,370 550,310 750,360 800,340 800,500 0,500" fill="#09050b"/>
+
+  <!-- Camera Viewfinder Overlay -->
+  <g stroke="#ffffff" stroke-width="2" opacity="0.6">
+    <!-- Corners -->
+    <path d="M 60 90 L 60 60 L 90 60"/>
+    <path d="M 740 90 L 740 60 L 710 60"/>
+    <path d="M 60 410 L 60 440 L 90 440"/>
+    <path d="M 740 410 L 740 440 L 710 440"/>
+    <!-- Focus Center Box -->
+    <rect x="360" y="210" width="80" height="80" fill="none" stroke="#2ee56b" stroke-width="2"/>
+    <line x1="400" y1="200" x2="400" y2="210" stroke="#2ee56b" stroke-width="2"/>
+    <line x1="400" y1="290" x2="400" y2="300" stroke="#2ee56b" stroke-width="2"/>
+    <line x1="350" y1="250" x2="360" y2="250" stroke="#2ee56b" stroke-width="2"/>
+    <line x1="440" y1="250" x2="450" y2="250" stroke="#2ee56b" stroke-width="2"/>
+  </g>
+  <text x="80" y="430" font-family="monospace" font-size="14" fill="#2ee56b">RAW 24FPS ISO 100 f/1.8</text>
+</svg>

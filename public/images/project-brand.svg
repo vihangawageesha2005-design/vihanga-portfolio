@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#06090c"/>
+  <!-- Studio Podium -->
+  <ellipse cx="400" cy="380" rx="260" ry="70" fill="#12181d" stroke="#2ee56b" stroke-width="1.5" stroke-opacity="0.3"/>
+  <ellipse cx="400" cy="380" rx="180" ry="45" fill="#19222a"/>
+
+  <!-- 3D Glowing VW Monogram Logo Symbol -->
+  <g transform="translate(260, 100)" filter="drop-shadow(0 10px 25px rgba(46,229,107,0.4))">
+    <!-- Left 'V' stroke -->
+    <path d="M 40 40 L 100 200 L 140 200 L 80 40 Z" fill="#2ee56b"/>
+    <!-- Center 'W' strokes interlock -->
+    <path d="M 120 40 L 170 170 L 210 60 L 240 60 L 190 200 L 150 200 Z" fill="#ffffff"/>
+    <path d="M 220 40 L 260 160 L 290 60 L 320 60 L 270 200 L 240 200 Z" fill="#2ee56b"/>
+  </g>
+
+  <!-- Typography underneath -->
+  <text x="400" y="340" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="900" letter-spacing="6" fill="#ffffff">VIHANGA WAGEESHA</text>
+  <text x="400" y="365" text-anchor="middle" font-family="sans-serif" font-size="12" letter-spacing="3" fill="#2ee56b">BRAND IDENTITY &amp; VISUAL DESIGN</text>
+</svg>
